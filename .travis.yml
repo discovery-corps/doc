@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.5"
+install: "pip install -r requirements.txt"
+script: make html
+
+branches:
+  only:
+    - master
+    - gh-pages
+
+notifications:
+  email: false
